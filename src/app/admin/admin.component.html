@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Başvuru Listesi</title>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Başvuru Listesi</h1>
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Ad</th>
+          <th scope="col">Soyad</th>
+          <th scope="col">Şirket İsmi</th>
+          <th scope="col">Ayrıntılar</th>
+          <th scope="col">İşlem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmet</td>
+          <td>Yılmaz</td>
+          <td>X Doğalgaz Sitemleri</td>
+          <td>
+            <button type="button" class="btn btn-info">Ayrıntılı Bilgi</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-success">Onayla</button>
+            <button type="button" class="btn btn-danger">Reddet</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Mehmet</td>
+          <td>Demir</td>
+          <td>Mehmet Tesisat</td>
+          <td>
+            <button type="button" class="btn btn-info">Ayrıntılı Bilgi</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-success">Onayla</button>
+            <button type="button" class="btn btn-danger">Reddet</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>Kaya</td>
+          <td>Ali Elektrik Hizmetleri</td>
+          <td>
+            <button type="button" class="btn btn-info">Ayrıntılı Bilgi</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-success">Onayla</button>
+            <button type="button" class="btn btn-danger">Reddet</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mevcut Şirketler</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  .dismiss-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .dismiss-button:hover {
+    background-color: #d32f2f;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Mevcut Şirketler</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Şirket İsmi</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>X Doğalgaz Sitemleri</td>
+        <td><button class="dismiss-button">Çıkar</button></td>
+      </tr>
+      <tr>
+        <td>Mehmet Tesisat</td>
+        <td><button class="dismiss-button">Çıkar</button></td>
+      </tr>
+      <tr>
+        <td>Ali Elektrik Hizmetleri</td>
+        <td><button class="dismiss-button">Çıkar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamirci Analizi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  .comment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .comment-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Performans Analizi</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Tamirci</th>
+        <th>Randevu Sayısı</th>
+        <th>Puan</th>
+        <th>Yorumlar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>X Doğalgaz Sistemleri</td>
+        <td>25</td>
+        <td>4.7/5</td>
+        <td><button class="comment-button">Yorumlar</button></td>
+      </tr>
+      <tr>
+        <td>Mehmet Tesisat</td>
+        <td>15</td>
+        <td>4.5/5</td>
+        <td><button class="comment-button">Yorumlar</button></td>
+      </tr>
+      <tr>
+        <td>Ali Elektrik Hizmetleri</td>
+        <td>10</td>
+        <td>3.9/5</td>
+        <td><button class="comment-button">Yorumlar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
+
